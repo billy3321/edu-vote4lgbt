@@ -1,4 +1,6 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+	font-size: 18px;
+}
 body,h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 	padding: 0;
@@ -13,18 +15,42 @@ body{
 	font-family: 'Noto Sans TC', sans-serif;
 }	
 
+.quoate-em{
+	display: block;
+	padding: 1em 2em 2em 2em;
+	position: relative;
+	box-sizing: border-box;
+}
+.quoate-em:before{
+	content: "“";
+	position: absolute;
+	left: 0;
+	top:0;
+	font-size: 60px;
+}
+.quoate-em:after{
+	content: "”";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 60px;
+}
 
+.b02 .quoate-em{
+	max-width: 400px;
+	margin: 1.5em 0;
+}
 
 .b01{
 	height: 100vh;
 	overflow: hidden;
 	background: url(../images/bg-a.png);
 	background-repeat: no-repeat,no-repeat,no-repeat;
-	background-size: cover;
+	background-size: 100% 100vh;
 }
 .title-txt-group{
 	margin: 30vh auto 0 auto;
-	max-width: 520px;
+	max-width: 420px;
 }
 .b01 p{
 	font-size: 16px;
@@ -37,16 +63,17 @@ body{
 .b01 h1{
 	background-color: #000;
 	color: #fff;
-	font-size: 42px;
+	font-size: 50px;
+	letter-spacing: 0.1em;
 }
 
 .b01 h2{
 	background-color:#fff;
 	color:  #999;
-	letter-spacing: .45em;
+	letter-spacing: .18em;
 	font-weight: normal;
 	font-size: 20px;
-	padding-left: 0.61em;
+	padding-left: 0;
 
 }
 .b01 a{
@@ -56,6 +83,8 @@ body{
 	font-size: 20px;
 	position: relative;
 	padding-bottom: 2em;
+	color: #fff;
+	text-decoration: underline;
 }
 
 .point{
@@ -121,7 +150,7 @@ a.donate-btn .point{
 
 .b02 .txt-group{
 	max-width: 800px;
-	margin:22vh auto 0 auto;
+	margin:12vh auto 0 auto;
 }
 .b03{
 	background-image: url(../images/bg-c.png);
@@ -130,15 +159,20 @@ a.donate-btn .point{
 }
 .b03 .txt-group{
 	width: 80%;
-	max-width: 600px;
-	margin:22vh auto 0 auto;
+	max-width: 800px;
+	margin:12vh auto 0 auto;
 }
 .b04 .txt-group{
 	max-width: 800px;
 	padding:14vh 0;
 	margin:0 auto;
 }
-
+.b04 em{
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0 5px;
+	text-decoration: underline;
+}
 
 .t01{float: left;}
 .t02{float: right}
@@ -172,8 +206,15 @@ footer a{
 .b04 .subtitle-01{
 	text-align: center;
 }
-@media screen and (max-width:960px){
 
+.stime{
+	font-size: 12px;
+	color: #999;
+}
+@media screen and (max-width:960px){
+.b02 .quoate-em{
+	max-width:960px;
+}
 .b02 {
 	-webkit-background-size: 110%;
 	background-size: 110%;
@@ -186,7 +227,6 @@ footer a{
 .b02 .txt-group,.b03 .txt-group{
 	width: 80%;
 	max-width: 600px;
-	margin:15vh auto 0 auto;
 	height: 85vh;
 	background-position:center 35vh;
 	-webkit-background-size: 48%;
@@ -212,7 +252,7 @@ footer a{
 .b04 .txt-group{
 	width: 80%;
 	max-width: 600px;
-	padding: 9vh 0 30vh 0;
+	padding: 12vh 0;
 }
 .t01,.t02{
 	width: auto;
@@ -233,23 +273,7 @@ a.donate-btn .point{
 	.b02 {
 	background-position: -2vw 35vh;
 }
-	.title-txt-group{
-	max-width: 440px;
-}
-.b01 p{
-	font-size: 13px;
-}
-	.b01 h1{
-	font-size: 34px;
-}
 
-.b01 h2{
-	font-size: 16px;
-
-}
-.b01 a{
-	font-size: 16px;
-}
 
 .b02 .txt-group,.b03 .txt-group{
 	max-width: 600px;
@@ -296,11 +320,12 @@ a.donate-btn .point{
 	display: inline;
 }
 	.b01 h1{
-	font-size: 29px;
+	font-size: 33px;
 }
 
 .b01 h2{
-	font-size: 16px;
+	font-size: 14px;
+	letter-spacing: 0.1em;
 
 }
 .b01 a{
