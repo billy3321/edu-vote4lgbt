@@ -50,6 +50,20 @@ img.sticker{
 	max-width: 460px;
 	margin:auto;
 	text-align: justify;
+	background-color: #fff;
+}
+.ps{
+	display: block;
+	clear: both;
+	font-size: 13px;
+	line-height: 1.4em;
+	text-align: center;
+	background-color: #ccc;
+	padding: 5px 8px;
+}
+.stin{
+	padding: 5px 15px;
+	display: block;
 }
 .b02 .quoate-em{
 	max-width: 400px;
