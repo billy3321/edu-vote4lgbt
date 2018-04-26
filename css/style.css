@@ -230,6 +230,7 @@ footer br{
 
 footer a{
 	color: #fff;
+	text-decoration: underline;
 }
 
 .b04 .subtitle-01{
@@ -364,18 +365,18 @@ a.donate-btn .point{
 	font-size: 30px;
 }
 
+
+a.donate-btn .point{
+	left: 75%;
+}
+}
+@media screen and (max-width:360px){
 footer br{
 	display: block;
 }
 footer span{
 	display: none;
 }
-a.donate-btn .point{
-	left: 75%;
-}
-}
-@media screen and (max-width:360px){
-
 img.sticker{
 	float: none;
 	width: 100%;
