@@ -394,6 +394,13 @@ a.donate-btn .point{
 
 
 @media screen and (max-width:480px){
+.ac-content{
+	height: 300px;
+	width: 300px;
+}
+.money{
+	margin-bottom: 0.4em;
+}
 .b02{
 	background-position: center 45vh;
 }
@@ -435,6 +442,14 @@ a.donate-btn .point{
 }
 }
 @media screen and (max-width:360px){
+.ac-content{
+	height: 240px;
+	width: 240px;
+}
+.money{
+	width: 200px;
+}
+
 footer br{
 	display: block;
 }
