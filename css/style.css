@@ -159,7 +159,7 @@ a.donate-btn .point{
 	background-color: #eeeeee;
 }
 
-.b02,.b03,.b04 {
+.b02,.b03,.b04,.sblock{
 	min-height: 100vh;
 	overflow: hidden;
 }
@@ -191,12 +191,25 @@ a.donate-btn .point{
 	max-width: 800px;
 	margin:12vh auto 0 auto;
 }
-.b04 .txt-group{
+.b04{
+	background-image: url(../images/bg-d.png);
+	background-repeat: no-repeat;
+	background-position: center 45vh;
+}
+.b05{
+	background-image: url(../images/bg-e.png);
+	background-repeat: no-repeat;
+	background-position: center 30vh;
+}
+.b02,.b03,.b04,.b05{
+	text-shadow: 2px 2px #fff,-2px -2px #fff,-2px 2px #fff,2px -2px #fff;
+}
+.sblock .txt-group{
 	max-width: 800px;
 	padding:14vh 0;
 	margin:0 auto;
 }
-.b04 em{
+.sblock em{
 	font-size: 30px;
 	font-weight: bold;
 	padding: 0 5px;
@@ -205,7 +218,7 @@ a.donate-btn .point{
 
 .t01{float: left;}
 .t02{float: right}
-.b04 .txt-group p{
+.sblock .txt-group p{
 	margin-bottom: .8em;
 }
 .subtitle-01{
@@ -233,7 +246,7 @@ footer a{
 	text-decoration: underline;
 }
 
-.b04 .subtitle-01{
+.sblock .subtitle-01{
 	text-align: center;
 }
 
@@ -334,7 +347,7 @@ line-height: 1.5em;}
 	display: none;
 
 }
-.b02 .subtitle-01,.b03 .subtitle-01,.b04 .subtitle-01{
+.b02 .subtitle-01,.b03 .subtitle-01,.sblock .subtitle-01{
 	text-align: center;
 }
 .b03 .subtitle-01 span{
@@ -343,7 +356,7 @@ line-height: 1.5em;}
 	height: 1px;
 	line-height: 2em;
 }
-.b04 .txt-group{
+.sblock .txt-group{
 	width: 80%;
 	max-width: 600px;
 	padding: 12vh 0;
@@ -382,7 +395,7 @@ a.donate-btn .point{
 	background-position:center 56vh;
 }
 
-.b02 .subtitle-01,.b03 .subtitle-01,.b04 .subtitle-01{
+.b02 .subtitle-01,.b03 .subtitle-01,.sblock .subtitle-01{
 	font-size: 30px;
 }
 a.donate-btn .point{
