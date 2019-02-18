@@ -77,10 +77,21 @@ img.sticker{
 	background-repeat: no-repeat,no-repeat,no-repeat;
 	background-size: 100% 100vh;
 }
+.small-b01{
+	height: 240px;
+	background: url(../images/bg-a.png);
+	background-repeat: no-repeat,no-repeat,no-repeat;
+	background-size: 100% 240px;
+}
 .title-txt-group{
 	margin: 30vh auto 0 auto;
 	max-width: 420px;
 }
+
+.small-b01 .title-txt-group{
+	margin: 50px auto 0 auto;
+}
+
 .b01 p{
 	font-size: 16px;
 	text-align: center;
@@ -89,6 +100,7 @@ img.sticker{
 .b01 hgroup
 {text-align: center;
 	margin:0.8em 0 1.8em 0;}
+
 .b01 h1{
 	background-color: #000;
 	color: #fff;
@@ -105,8 +117,12 @@ img.sticker{
 	padding-left: 0;
 
 }
-.b01 a{
-	display: block;
+.top-nav{
+	text-align: center;
+}
+.top-nav a{
+	display: inline-block;
+	margin:0 10px;
 	text-align: center;
 	color: red;
 	font-size: 20px;
@@ -302,6 +318,36 @@ line-height: 1.5em;}
 }
 
 
+.pay-list{
+	width: 100%;
+	border-collapse: collapse;
+	line-height: 1.3em;
+	margin-bottom:50px;
+}
+
+.pay-list th,.pay-list td{
+	padding:5px 10px;
+}
+
+.pay-list th{
+	border-bottom: 3px solid #ccc;
+}
+
+.pay-list td{
+	border-bottom: 1px solid #ccc;
+}
+
+.pay-list tr td:nth-child(1),.pay-list tr td:nth-child(3),.pay-list tr td:nth-child(4){
+	font-size: 13px;
+}
+.pay-list tr td:last-child{
+	text-align: right;
+}
+
+.pay-list.other-list tr td:nth-child(1){
+	font-size: 16px;
+}
+
 
 
 
@@ -401,6 +447,89 @@ a.donate-btn .point{
 a.donate-btn .point{
 	left: 68%;
 }
+
+.pay-list th{
+	display: none;
+}
+			
+.pay-list td:nth-child(1):before{
+	content: "日期";
+	font-size: 13px;
+	display: block;
+}
+
+.pay-list.other-list td:nth-child(1):before{
+	content: "行政費用明細";
+}
+.pay-list.total-pay-info td:nth-child(1):before,.pay-list.total-pay-info td:nth-child(2):before{
+	content: "";
+}
+
+.pay-list td:nth-child(2):before{
+	content: "主題";
+	font-size: 13px;
+	display: block;
+}
+.pay-list.other-list td:nth-child(2):before{
+	content: "費用";
+}
+
+.pay-list td:nth-child(3):before{
+	content: "講師";
+	font-size: 13px;
+	display: block;
+}
+.pay-list td:nth-child(4):before{
+	content: "地點";
+	font-size: 13px;
+	display: block;
+}
+.pay-list td:nth-child(5):before{
+	content: "費用";
+	font-size: 13px;
+	display: block;
+}
+.pay-list tr td:nth-child(1),.pay-list tr td:nth-child(3),.pay-list tr td:nth-child(4){
+	font-size: 1em;
+}
+
+.pay-list td{
+	display: block;
+	width: 100%;
+	border:none;
+	font-size: 16px;
+}
+.pay-list tr:first-child{
+	border: none;
+	margin:0;
+}
+.pay-list tr{
+	display: block;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+
+.pay-list tr:last-child td:nth-child(1),.pay-list tr:last-child td:nth-child(3),.pay-list tr:last-child td:nth-child(4){
+	display: none;
+}
+.pay-list tr:last-child td:nth-child(2):before,.pay-list tr:last-child td:last-child:before{
+	content: "";
+}
+
+.other-list.pay-list tr:last-child td:nth-child(1),.total-pay-info.pay-list tr:last-child td:nth-child(1){
+	display: block;
+}
+.other-list.pay-list tr:last-child td:nth-child(1):before{
+	display: none;
+}
+.pay-list tr:last-child td:nth-child(2):before{
+	content: "";
+}
+
+.pay-list tr td:last-child{
+	text-align: left;
+}
+
 }
 
 
@@ -453,6 +582,7 @@ a.donate-btn .point{
 a.donate-btn .point{
 	left: 75%;
 }
+
 }
 @media screen and (max-width:360px){
 .ac-content{
@@ -481,4 +611,5 @@ img.sticker{
 .b03{
 	background-position: center bottom;
 }
+
 }
